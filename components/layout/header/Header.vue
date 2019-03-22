@@ -1,15 +1,36 @@
 <template>
   <div>
     <v-toolbar color="teal">
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>Title</v-toolbar-title>
-      <v-spacer></v-spacer>
+      <v-toolbar-side-icon
+        class="hidden-md-and-up"
+        @click.stop="drawer = !drawer"
+      ></v-toolbar-side-icon>
+      <v-spacer>
+        <strong>
+          {{ title }}
+        </strong>
+      </v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="item in items" :key="item" flat>
+        <v-btn v-for="item in items" :key="item.title" flat>
           <v-icon size="24px">{{ item.icon }}</v-icon> {{ item.title }}
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list class="pt-0" dense>
+        <v-divider></v-divider>
+
+        <v-list-tile v-for="item in items" :key="item.title" @click="item.to">
+          <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+
+          <v-list-tile-content>
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 
@@ -20,7 +41,7 @@ export default {
     return {
       items: [
         {
-          icon: 'hpme',
+          icon: 'home',
           title: 'Home',
           to: '/'
         },
@@ -30,10 +51,8 @@ export default {
           to: '/about'
         }
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'FunxtionID'
+      drawer: null,
+      title: 'FUNXTION ID'
     }
   }
 }
