@@ -4,10 +4,11 @@
       <div class="headline">Company info</div>
     </v-card-title>
     <v-card-text>
-      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt
-      ornare. Pellentesque habitant morbi tristique senectus et netus et
-      malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est
-      vitae tellus bibendum tincidunt. Suspendisse potenti.
+      Kami terdiri dari kumpulan developer atau programmer yang ada di
+      indonesia. Funxtion ID merupakan wadah atau tempat untuk para developer
+      atau programmer menampilkan project yang telah dibuat. Selain itu,
+      Funxtion ID juga menerima permintaan bantuan dalam pembuatan project
+      dengan technologi tertentu.
     </v-card-text>
   </v-card>
 </template>

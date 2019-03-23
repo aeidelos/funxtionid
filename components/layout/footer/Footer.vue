@@ -2,7 +2,7 @@
   <div>
     <v-footer dark height="auto">
       <v-card class="flex" flat tile>
-        <v-card-title class="teal">
+        <v-card-title class="pink accent-3">
           <strong class="subheading">
             Get connected with us on social networks!
           </strong>
@@ -15,7 +15,7 @@
         </v-card-title>
 
         <v-card-actions class="grey darken-3 justify-center">
-          &copy;2018 — <strong>Vuetify</strong>
+          &copy;2019 — <strong> &nbsp; Funxtion ID</strong>
         </v-card-actions>
       </v-card>
     </v-footer>
