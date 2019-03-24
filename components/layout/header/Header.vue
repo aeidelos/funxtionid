@@ -11,7 +11,7 @@
         </strong>
       </v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="item in items" :key="item.title" flat>
+        <v-btn v-for="item in items" :key="item.title" :to="item.to" nuxt flat>
           <v-icon size="24px">{{ item.icon }}</v-icon> {{ item.title }}
         </v-btn>
       </v-toolbar-items>
@@ -20,7 +20,7 @@
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
 
-        <v-list-tile v-for="item in items" :key="item.title" @click="item.to">
+        <v-list-tile v-for="item in items" :key="item.title" :to="item.to" nuxt>
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>

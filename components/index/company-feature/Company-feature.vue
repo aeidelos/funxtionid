@@ -5,7 +5,7 @@
         <div class="text-xs-center">
           <h2 class="headline">Langkah terbaik untuk memulai projek</h2>
           <span class="subheading">
-            Berikut
+            Desain, Efisien, Maintability
           </span>
         </div>
       </v-flex>
