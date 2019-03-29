@@ -6,6 +6,7 @@
         @click.stop="drawer = !drawer"
       ></v-toolbar-side-icon>
       <v-spacer>
+        <img class="fx-icon" :src="icon" alt="Funxtion icon" />
         <strong>
           {{ title }}
         </strong>
@@ -35,10 +36,12 @@
 </template>
 
 <script>
+import Icon from '@/assets/img/icon.png'
 export default {
   name: 'LayoutHeader',
   data() {
     return {
+      icon: Icon,
       items: [
         {
           icon: 'home',
@@ -58,4 +61,11 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.fx-icon {
+  width: 26px;
+  height: 30px;
+  padding: 4px 1px;
+  border: 1px solid black;
+}
+</style>

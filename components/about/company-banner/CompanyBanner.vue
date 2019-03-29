@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Icon from '@/static/icon.png'
+import Icon from '@/assets/img/icon.png'
 export default {
   name: 'AboutCompanyBanner',
   data() {

@@ -9,7 +9,7 @@
         <div class="subheading mb-3 text-xs-center">
           Kenalin projek semakin mudah
         </div>
-        <v-btn class="pink accent-2 mt-5" dark large href="/pre-made-themes">
+        <v-btn class="pink accent-2 mt-5" dark large>
           Mulai Sekarang
         </v-btn>
       </v-layout>
@@ -19,7 +19,7 @@
 
 <script>
 import Hero from '@/assets/img/index.jpeg'
-import Icon from '@/static/icon.png'
+import Icon from '@/assets/img/icon.png'
 export default {
   name: 'IndexBanner',
   data() {

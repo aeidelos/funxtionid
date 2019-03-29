@@ -6,7 +6,7 @@
           Sudah memiliki project? Mulai membangun projek hari ini?
         </div>
         <em>Daftarkan projek anda dengan mudah</em>
-        <v-btn class="pink accent-2 mt-5" dark large href="/pre-made-themes">
+        <v-btn class="pink accent-2 mt-5" dark large>
           Daftarkan projek
         </v-btn>
       </v-layout>
